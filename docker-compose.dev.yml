@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  postgres:
+    environment:
+      POSTGRES_USER: nest
+      POSTGRES_PASSWORD: root
+    image: postgres:13.2-alpine
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - backend
+    restart: always
+
+volumes:
+  postgres:
+
+networks:
+  backend:
