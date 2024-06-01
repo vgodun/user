@@ -1,11 +1,12 @@
 {
-  "name": "user",
+  "name": "nest-course",
   "version": "0.0.1",
   "description": "",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "docker:compose": "docker-compose -f docker-compose.dev.yml up",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": " nest start",
