@@ -16,5 +16,4 @@ export class UserRoles extends Model<UserRoles>{
     @ForeignKey(() => User)
     @Column({type: DataType.INTEGER})
     userId: number;
-
 }
