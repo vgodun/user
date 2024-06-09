@@ -1,7 +1,4 @@
-import {Body, HttpException, HttpStatus, Injectable, Post, UnauthorizedException} from "@nestjs/common";
-import {InjectModel} from "@nestjs/sequelize";
-import {Role} from "../roles/roles.model";
-import {CreateRoleDto} from "../roles/dto/create-role-dto";
+import {HttpException, HttpStatus, Injectable, Post, UnauthorizedException} from "@nestjs/common";
 import {CreateUserDto} from "../users/dto/create-user.dto";
 import {UsersService} from "../users/users.service";
 import {JwtService} from "@nestjs/jwt";

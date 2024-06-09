@@ -9,12 +9,10 @@ export class AuthController {
     constructor(private readonly authService:AuthService) {}
     @Post('/login')
     login(@Body() userDto:CreateUserDto) {
-
         return this.authService.login(userDto)
     }
     @Post('/registration')
     registration(@Body() userDto:CreateUserDto) {
-        console.log('login', userDto)
        return this.authService.registration(userDto)
     }
 }
